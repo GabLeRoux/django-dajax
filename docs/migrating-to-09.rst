@@ -4,12 +4,12 @@ Migrating to 0.9
 Static files
 ------------
 
-Since ``0.9`` dajax takes advantage of ``django.contrib.staticfiles`` so deploying a dajax application live is much easy than in previous versions.
+Since ``0.9`` dajax takes advantage of ``django.contrib.staticfiles`` so deploying a dajax application live is much easier than in previous versions.
 All the ``X.dajax.core.js`` flavoured files (jQuery, Prototype, ...) are inside a new folder named static instead of src.
 
 You need to remember to run ``python manage.py collectstatic`` before deploying your code live. This command will collect all the static files your application need into ``STATIC_ROOT``. For further information, this is the `Django static files docuemntation <https://docs.djangoproject.com/en/dev/howto/static-files/>`_
 
-You should change all you dajax core imports using for example for jQuery::
+You should change all your dajax core imports using for example for jQuery::
 
     {% static "dajax/jquery.core.js" %}
 
