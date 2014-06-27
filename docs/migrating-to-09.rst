@@ -16,7 +16,7 @@ You should change all you dajax core imports using for example for jQuery::
 
 Imports
 -------
-If you was importing ``dajax`` using::
+If you were importing ``dajax`` using::
 
     from dajax.core.Dajax import Dajax
 
